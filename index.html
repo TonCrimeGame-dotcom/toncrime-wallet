@@ -284,34 +284,35 @@
         <div class="stats">
           <div class="stat">
             <small>Toplam Bakiye</small>
-            <strong>18.42 TON</strong>
+            <strong id="walletTotal">Oturum bekleniyor</strong>
           </div>
           <div class="stat">
             <small>Çekilebilir</small>
-            <strong>4.85 TON</strong>
+            <strong id="walletWithdrawable">Oturum bekleniyor</strong>
           </div>
           <div class="stat">
             <small>Bekleyen</small>
-            <strong>0.75 TON</strong>
+            <strong id="walletPending">Oturum bekleniyor</strong>
           </div>
           <div class="stat">
             <small>Son İşlem</small>
-            <strong>2 dk önce</strong>
+            <strong id="walletLast">-</strong>
           </div>
         </div>
 
         <div class="list">
-          <div class="row"><span>Cüzdan Durumu</span><span>Bağlı</span></div>
-          <div class="row"><span>Aktif Oyun Kimliği</span><span>#TC-2048</span></div>
-          <div class="row"><span>Bugünkü Market Satışı</span><span>+1.20 TON</span></div>
-          <div class="row"><span>Günlük Çekim Limiti</span><span>100 TON</span></div>
+          <div class="row"><span>Cüzdan Durumu</span><span id="walletStatus">Oturum bekleniyor</span></div>
+          <div class="row"><span>Aktif Oyun Kimliği</span><span id="walletIdentity">-</span></div>
+          <div class="row"><span>Bugünkü Market Satışı</span><span id="walletMarketToday">-</span></div>
+          <div class="row"><span>Günlük Çekim Limiti</span><span id="walletDailyLimit">-</span></div>
         </div>
       </aside>
     </main>
 
     <div class="footer-note">
-      Taslak sürüm — bağlantılar ve rakamlar örnek amaçlıdır, backend bağlandığında canlı veriyle değiştirilebilir.
+      Harici cuzdan girisi Telegram oyunundan uretilen kisa sureli oturumla acilir. Stars bakiyesi cekilebilir TON'a donusmez.
     </div>
   </div>
+  <script src="./app.js?v=20260413-wallet-1"></script>
 </body>
 </html>
